@@ -1,5 +1,5 @@
 //Time Complexity O(n^2)
-//Bubble Sort in ascending order(a to z)
+//Bubble Sort in descending order(z to a)
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -27,7 +27,7 @@ void bubble_sort(int A[], int n)
 
     for(i = 0; i < n - 1; i++) {
         for(j = 0; j < n - i - 1; j++) {
-            if(A[j] > A[j + 1]) {
+            if(A[j] < A[j + 1]) {		//working for descending
                 swap(A[j], A[j + 1]);
             }
         }
