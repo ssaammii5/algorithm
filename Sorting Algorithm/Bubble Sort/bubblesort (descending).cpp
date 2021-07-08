@@ -19,6 +19,8 @@ int main(void)
     for(int i = 0; i < n; i++) {
         cout << Arr[i] << " ";
     }
+
+    return 0;
 }
 
 void bubble_sort(int A[], int n)
